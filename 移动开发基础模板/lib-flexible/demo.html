@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./flexible/flexible_css.debug.js"></script>
+    <script src="./flexible/flexible.js"></script>
+    <link rel="stylesheet" href="./index.css">
+    <script>
+    //没有考虑字体是奇数的情况
+    //边框的
+    window.onload = function(){
+        // 当前屏幕宽度
+        var clientWidth = document.documentElement.clientWidth;
+        var w = 640;
+        var fontSize = 100;//约定 100px就相当于1rem
+        // 100px : 640px    ?px：750
+
+
+        // 750 * 100 / 640 
+        var currentFontSize = clientWidth * fontSize / w;
+        document.documentElement.style.fontSize = currentFontSize + 'px';
+    }
+    window.onresize = function(){
+
+    }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+
+rem.js 
+
+量出来是多少就写多少 
+
+100/64rem

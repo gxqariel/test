@@ -1,0 +1,9 @@
+.ceshi {
+  font-size: 12px;
+}
+[data-dpr="2"] .ceshi {
+  font-size: 24px;
+}
+[data-dpr="3"] .ceshi {
+  font-size: 36px;
+}
