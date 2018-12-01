@@ -4,9 +4,12 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
+import { Dialog,Field } from 'vant';
+Vue.use(Dialog);
+Vue.use(Field);
+
 Vue.config.productionTip = false
 
-/* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
